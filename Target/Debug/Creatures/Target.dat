@@ -1,0 +1,179 @@
+9 8
+
+( Torso
+-position 0 1.1 0
+-rotation 0 0 1
+-shape -cylinder 0.1 0.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( LeftUpper
+-position -0.5 1.1 0.0
+-rotation 1 0 0
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( LeftLower
+-position -1 0.6 0.0
+-rotation 0 1 0
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( RightUpper
+-position 0.5 1.1 0.0
+-rotation 1 0 0
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( RightLower
+-position 1 0.6 0.0
+-rotation 0 1 0
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( ForwardUpper
+-position 0.0 1.1 0.5
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( ForwardLower
+-position 0 0.6 1
+-rotation 0 1 0
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( BackwardUpper
+-position 0.0 1.1 -0.5
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( BackwardLower
+-position 0 0.6 -1
+-rotation 0 1 0
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( Torso-LeftUpper
+-connect Torso LeftUpper
+-jointPosition 0 1.1 0
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-motorForce 40
+-motorSpeed 8
+)
+
+( LeftUpper-LeftLower
+-connect LeftUpper LeftLower
+-jointPosition -1 1.1 0
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-RightUpper
+-connect Torso RightUpper
+-jointPosition 0 1.1 0
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-motorForce 40
+-motorSpeed 8
+)
+
+( RightUpper-RightLower
+-connect RightUpper RightLower
+-jointPosition 1 1.1 0
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-ForwardUpper
+-connect Torso ForwardUpper
+-jointPosition 0 1.1 0
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-motorForce 40
+-motorSpeed 8
+)
+
+( ForwardUpper-ForwardLower
+-connect ForwardUpper ForwardLower
+-jointPosition 0 1.1 1
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-BackwardUpper
+-connect Torso BackwardUpper
+-jointPosition 0 1.1 0
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-motorForce 40
+-motorSpeed 8
+)
+
+( BackwardUpper-BackwardLower
+-connect BackwardUpper BackwardLower
+-jointPosition 0 1.1 -1
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+(
+-evaluationPeriod 1000
+-recordSensors
+-recordObjectPosition Torso
+)

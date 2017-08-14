@@ -1,0 +1,140 @@
+1
+7 6
+
+( Torso
+-position 0 0.2 0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( Front
+-position 0 0.2 1.0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( Back
+-position 0 0.2 -1.0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( LeftArm
+-position -0.4 0.2 0.5
+-rotation 1 0 0
+-shape -cylinder 0.1 0.8
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( RightArm
+-position 0.4 0.2 0.5
+-rotation 1 0 0
+-shape -cylinder 0.1 0.8
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( LeftLeg
+-position -0.4 0.2 -0.5
+-rotation 1 0 0
+-shape -cylinder 0.1 0.8
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( RightLeg
+-position 0.4 0.2 -0.5
+-rotation 1 0 0
+-shape -cylinder 0.1 0.8
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( Torso-Front
+-connect Torso Front
+-jointPosition 0 0.2 0.5
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-Back
+-connect Torso Back
+-jointPosition 0 0.2 -0.5
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-LeftArm
+-connect Torso LeftArm
+-jointPosition 0 0.2 0.5
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-RightArm
+-connect Torso RightArm
+-jointPosition 0 0.2 0.5
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-LeftLeg
+-connect Torso LeftLeg
+-jointPosition 0 0.2 -0.5
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-RightLeg
+-connect Torso RightLeg
+-jointPosition 0 0.2 -0.5
+-jointType Hinge
+-jointNormal 0 0 1
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+(
+-evaluationPeriod 20
+-recordSensors
+-recordObjectPosition Torso
+)

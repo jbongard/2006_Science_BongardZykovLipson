@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MorphEngine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\JOSHBO~1\LOCALS~1\Temp\RSPF3.tmp" with contents
+[
+ode.lib drawstuff.lib resources.RES Comctl32.lib OpenGL32.lib Glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/MorphEngine.pdb" /machine:I386 /out:"Release/MorphEngine.exe" /libpath:"c:\ode-0.039\lib" /libpath:"C:\Program Files\glut-3.7\lib" 
+.\Release\agent.obj
+.\Release\debris.obj
+.\Release\environment.obj
+.\Release\matrix.obj
+.\Release\mejoint.obj
+.\Release\meobject.obj
+.\Release\MorphEngine.obj
+.\Release\nnetwork.obj
+.\Release\plume.obj
+.\Release\plumePoint.obj
+.\Release\simParams.obj
+.\Release\StdAfx.obj
+.\Release\trajectory.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\JOSHBO~1\LOCALS~1\Temp\RSPF3.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+MorphEngine.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

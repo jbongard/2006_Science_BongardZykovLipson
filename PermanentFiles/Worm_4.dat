@@ -1,0 +1,80 @@
+1
+4 3
+
+( Torso
+-position 0 0.2 0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( Front
+-position 0 0.2 1.0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( Fronter
+-position 0 0.2 2.0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+)
+
+( Back
+-position 0 0.2 -1.0
+-rotation 0 0 1
+-shape -cylinder 0.1 1.0
+-mass 1.00
+-colour 0.5 0.5 0.5
+-floorContact
+-addTouchSensor
+)
+
+( Torso-Front
+-connect Torso Front
+-jointPosition 0 0.2 0.5
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Front-Fronter
+-connect Front Fronter
+-jointPosition 0 0.2 1.5
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+( Torso-Back
+-connect Torso Back
+-jointPosition 0 0.2 -0.5
+-jointType Hinge
+-jointNormal 1 0 0
+-jointLimits -30 30
+-addMotor
+-addSensor
+-motorForce 40
+-motorSpeed 8
+)
+
+(
+-evaluationPeriod 20
+-recordSensors
+-recordObjectPosition Torso
+)

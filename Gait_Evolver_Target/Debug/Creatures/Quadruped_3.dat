@@ -1,0 +1,193 @@
+9 8
+
+( Node0
+-position 0.000000 0.750000 0.000000
+-rotation 0.000000 0.0 0.000000
+-shape -sphere 0.200000
+-mass 5.00
+-colour 0.000000 0.752941 0.627451
+-floorContact
+)
+
+( LeftLowerArm
+-position -1.0 0.75 -1.0
+-rotation 0.0 0.0 0.0
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.0 1.0 0.0
+-floorContact
+-addTouchSensor
+)
+
+( LeftUpperArm
+-position -0.5000    1.1250   -0.5000
+-rotation 1.0 -0.75 1.0
+-shape -cylinder 0.100000 1.50000
+-mass 1.00
+-colour 0.0 1.0 0.0
+)
+
+( RightLowerArm
+-position 1.0 0.75 -1.0
+-rotation 0.0 0.0 0.0
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.0 0.0 1.0
+-floorContact
+-addTouchSensor
+)
+
+( RightUpperArm
+-position 0.5000    1.1250   -0.5000
+-rotation -1.0000   -0.7500    1.0000
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.0 0.0 1.0
+)
+
+( RightLowerLeg
+-position 1.0 0.75 1.0
+-rotation 0.0 0.0 0.0
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.501961 0.000000 1.000000
+-floorContact
+-addTouchSensor
+)
+
+( RightUpperLeg
+-position 0.5000    1.1250   0.5000
+-rotation -1.0000   -0.7500    -1.0000
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.501961 0.000000 1.000000
+)
+
+( LeftLowerLeg
+-position -1.0 0.75 1.0
+-rotation 0.0 0.0 0.0
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.501961 0.000000 1.000000
+-floorContact
+-addTouchSensor
+)
+
+( LeftUpperLeg
+-position -0.5000    1.1250   0.5000
+-rotation 1.0000   -0.7500    -1.0000
+-shape -cylinder 0.100000 1.500000
+-mass 1.00
+-colour 0.501961 0.000000 1.000000
+)
+
+( LeftLowerArm-LeftUpperArm
+-connect LeftLowerArm LeftUpperArm
+-jointPosition -1.0 1.5 -1.0
+-jointType Hinge
+-jointNormal -1.000000 0.000000 1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addSensor
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( RightLowerArm-RightUpperArm
+-connect RightLowerArm RightUpperArm
+-jointPosition 1.0 1.5 -1.0
+-jointType Hinge
+-jointNormal 1.000000 0.000000 1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addSensor
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( LeftLowerLeg-LeftUpperLeg
+-connect LeftLowerLeg LeftUpperLeg
+-jointPosition -1.0 1.50 1.0
+-jointType Hinge
+-jointNormal -1.000000 0.000000 -1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addSensor
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( RightLowerLeg-RightUpperLeg
+-connect RightLowerLeg RightUpperLeg
+-jointPosition 1.0 1.5 1.0
+-jointType Hinge
+-jointNormal 1.000000 0.000000 -1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addSensor
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( LeftUpperArm-Node0
+-connect LeftUpperArm Node0
+-jointPosition Node0
+-jointType Hinge
+-jointNormal -1.000000 0.000000 1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( RightUpperArm-Node0
+-connect RightUpperArm Node0
+-jointPosition Node0
+-jointType Hinge
+-jointNormal 1.000000 0.000000 1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( LeftUpperLeg-Node0
+-connect LeftUpperLeg Node0
+-jointPosition Node0
+-jointType Hinge
+-jointNormal -1.000000 0.000000 -1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+( RightUpperLeg-Node0
+-connect RightUpperLeg Node0
+-jointPosition Node0
+-jointType Hinge
+-jointNormal 1.000000 0.000000 -1.000000
+-jointLimits -30.000000 30.000000
+-springConstants 0.000000 1000.000000
+-addMotor
+-motorForce 40.000000
+-motorSpeed 8.000000
+)
+
+(
+-populationSize 20
+-generations 5
+-evaluationPeriod 1000
+-evaluations 1
+-hiddenNodes 3
+-mutationRate 3.000000
+-cameraDistance 30.000000
+-objectToMove Node0
+)

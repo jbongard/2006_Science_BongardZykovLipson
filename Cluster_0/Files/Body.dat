@@ -1,0 +1,3601 @@
+15
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position -0.787857 0.4 -1.09516
+-rotation -0.527152 0 -0.790323
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 0.258042 0.4 -1.16652
+-rotation 0.178726 0 -0.933036
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -1.46313 0.4 -1.33788
+-rotation -0.947377 0 0.0705459
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -2.06352 0.4 -0.935495
+-rotation -0.478949 0 0.820431
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position 0.175846 0.4 -2.09019
+-rotation -0.299112 0 -0.922731
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position 0.325402 0.4 -1.62882
+-rotation -0.299112 0 -0.922731
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -0.193197 0.4 -1.49385
+-rotation -0.886039 0 -0.39476
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 0.249822 0.4 -1.29648
+-rotation -0.886039 0 -0.39476
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position -0.205152 0.4 -1.4527
+-rotation -0.900951 0 -0.359427
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.245323 0.4 -1.27299
+-rotation -0.900951 0 -0.359427
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -0.022653 0.4 -1.91408
+-rotation -0.642328 0 -0.726853
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 0.298511 0.4 -1.55066
+-rotation -0.642328 0 -0.726853
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition -0.524281 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.09516 0 0.787857
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition 0.168679 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.16652 0 -0.258042
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition -0.989441 0.4 -1.37315
+-jointType Hinge
+-jointNormal -0.242715 0 0.675272
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -1.82405 0.4 -1.34571
+-jointType Hinge
+-jointNormal 0.402382 0 0.600395
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-5
+-connect 2 5
+-jointPosition 0.325402 0.4 -1.62882
+-jointType Hinge
+-jointNormal -0.923669 0 0.0821967
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 2-6
+-connect 2 6
+-jointPosition 0.249822 0.4 -1.29648
+-jointType Hinge
+-jointNormal -0.327337 0 0.451239
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 2-7
+-connect 2 7
+-jointPosition 0.245323 0.4 -1.27299
+-jointType Hinge
+-jointNormal -0.286184 0 0.463194
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 2-8
+-connect 2 8
+-jointPosition 0.298511 0.4 -1.55066
+-jointType Hinge
+-jointNormal -0.747563 0 0.280695
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 0.979042 0.4 -1.05097
+-rotation 0.640132 0 -0.701948
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 0.451153 0.4 -1.16482
+-rotation -0.824732 0 -0.471505
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position 0.952 0.4 -1.66363
+-rotation -0.361679 0 -0.878458
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position 0.552975 0.4 -1.33634
+-rotation -0.808257 0 0.499219
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position 0.80032 0.4 -1.96129
+-rotation -0.0184019 0 -0.969825
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position 0.809521 0.4 -1.47637
+-rotation -0.0184019 0 -0.969825
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position 0.332042 0.4 -1.75062
+-rotation -0.462727 0 -0.852516
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 0.563406 0.4 -1.32436
+-rotation -0.462727 0 -0.852516
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 0.462596 0.4 -0.641329
+-rotation -0.233006 0 0.941599
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.579099 0.4 -1.11213
+-rotation -0.233006 0 0.941599
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 0.294888 0.4 -1.51917
+-rotation -0.500526 0 -0.830887
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 0.545151 0.4 -1.10373
+-rotation -0.500526 0 -0.830887
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.658976 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.05097 0 -0.979042
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-2
+-connect 1 2
+-jointPosition 0.863519 0.4 -0.92907
+-jointType Hinge
+-jointNormal -0.113848 0 0.527889
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition 1.13284 0.4 -1.2244
+-jointType Hinge
+-jointNormal -0.612652 0 0.0270428
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition 0.957104 0.4 -1.58595
+-jointType Hinge
+-jointNormal 0.32729 0 0.399024
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 4-5
+-connect 4 5
+-jointPosition 0.809521 0.4 -1.47637
+-jointType Hinge
+-jointNormal -0.62495 0 -0.247345
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 4-6
+-connect 4 6
+-jointPosition 0.563406 0.4 -1.32436
+-jointType Hinge
+-jointNormal -0.414283 0 0.220933
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 2-7
+-connect 2 7
+-jointPosition 0.579099 0.4 -1.11213
+-jointType Hinge
+-jointNormal 0.523493 0 -0.0114425
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 7-8
+-connect 7 8
+-jointPosition 0.545151 0.4 -1.10373
+-jointType Hinge
+-jointNormal -0.877842 0 0.167708
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 0.22523 0.4 1.16854
+-rotation 0.156144 0 0.93708
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -1.14946 0.4 -0.447276
+-rotation -0.898916 0 -0.307328
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position 0.230892 0.4 2.10619
+-rotation -0.11924 0 0.942487
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -0.184693 0.4 1.63344
+-rotation -0.82226 0 -0.475803
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -0.582386 0.4 -0.695478
+-rotation 0.649248 0 -0.720678
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -0.90701 0.4 -0.335139
+-rotation 0.649248 0 -0.720678
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -0.26933 0.4 -0.0803667
+-rotation 0.865358 0 0.438241
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -0.702009 0.4 -0.299487
+-rotation 0.865358 0 0.438241
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 0.586801 0.4 0.37238
+-rotation 0.848406 0 0.47022
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.162598 0.4 0.13727
+-rotation 0.848406 0 0.47022
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 0.576618 0.4 0.387064
+-rotation 0.829597 0 0.502662
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 0.16182 0.4 0.135733
+-rotation 0.829597 0 0.502662
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.147158 0.4 0.7
+-jointType Hinge
+-jointNormal 1.16854 0 -0.22523
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition -0.7 0.4 -0.293611
+-jointType Hinge
+-jointNormal -0.447276 0 1.14946
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition 0.290512 0.4 1.63495
+-jointType Hinge
+-jointNormal 0.937652 0 -0.00566203
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition 0.226437 0.4 1.87135
+-jointType Hinge
+-jointNormal -0.472748 0 0.415585
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-5
+-connect 2 5
+-jointPosition -0.90701 0.4 -0.335139
+-jointType Hinge
+-jointNormal -0.248202 0 -0.567072
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 2-6
+-connect 2 6
+-jointPosition -0.702009 0.4 -0.299487
+-jointType Hinge
+-jointNormal 0.366909 0 -0.880128
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 6-7
+-connect 6 7
+-jointPosition 0.162598 0.4 0.13727
+-jointType Hinge
+-jointNormal 0.452747 0 -0.856131
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 6-8
+-connect 6 8
+-jointPosition 0.16182 0.4 0.135733
+-jointType Hinge
+-jointNormal 0.467431 0 -0.845948
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position -0.745255 0.4 1.10364
+-rotation -0.500785 0 0.807288
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 0.483522 0.4 -1.14513
+-rotation 0.331556 0 -0.890264
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -1.27997 0.4 1.05151
+-rotation -0.887842 0 -0.337988
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position 0.467016 0.4 -0.250944
+-rotation 0.246816 0 0.917378
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -0.0110311 0.4 0.524605
+-rotation 0.916111 0 -0.318812
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -0.469087 0.4 0.68401
+-rotation 0.916111 0 -0.318812
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -0.0959039 0.4 0.921314
+-rotation 0.96282 0 0.117807
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -0.577314 0.4 0.862411
+-rotation 0.96282 0 0.117807
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 1.11113 0.4 -1.58807
+-rotation 0.946999 0 -0.209985
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.63763 0.4 -1.48307
+-rotation 0.946999 0 -0.209985
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -1.97559 0.4 0.500769
+-rotation -0.523593 0 -0.816548
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -1.71379 0.4 0.909043
+-rotation -0.523593 0 -0.816548
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition -0.494863 0.4 0.7
+-jointType Hinge
+-jointNormal 1.10364 0 0.745255
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition 0.317744 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.14513 0 -0.483522
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition -0.836045 0.4 1.22051
+-jointType Hinge
+-jointNormal -0.0521316 0 0.534712
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-4
+-connect 2 4
+-jointPosition 0.343608 0.4 -0.709632
+-jointType Hinge
+-jointNormal 0.894189 0 0.016506
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-5
+-connect 1 5
+-jointPosition -0.469087 0.4 0.68401
+-jointType Hinge
+-jointNormal -0.57904 0 -0.734224
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 1-6
+-connect 1 6
+-jointPosition -0.577314 0.4 0.862411
+-jointType Hinge
+-jointNormal -0.18233 0 -0.649351
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 2-7
+-connect 2 7
+-jointPosition 0.63763 0.4 -1.48307
+-jointType Hinge
+-jointNormal -0.442934 0 -0.627607
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 3-8
+-connect 3 8
+-jointPosition -1.71379 0.4 0.909043
+-jointType Hinge
+-jointNormal -0.550744 0 0.69562
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 1.1748 0.4 -0.0399665
+-rotation 0.949594 0 -0.0277863
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -1.14827 0.4 0.457514
+-rotation -0.896541 0 0.314189
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -1.98115 0.4 0.398595
+-rotation -0.825436 0 -0.470272
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -1.91476 0.4 -0.079453
+-rotation 0.302175 0 -0.900661
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position 0.393186 0.4 1.16515
+-rotation 0.274653 0 0.930304
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position 0.25586 0.4 0.7
+-rotation 0.274653 0 0.930304
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -1.73747 0.4 1.0049
+-rotation -0.0106832 0 0.969941
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -1.73213 0.4 0.519927
+-rotation -0.0106832 0 0.969941
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 1.15109 0.4 0.513425
+-rotation 0.902179 0 0.356332
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.7 0.4 0.335259
+-rotation 0.902179 0 0.356332
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 2.1253 0.4 0.0319206
+-rotation 0.950826 0 0.191909
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 1.64989 0.4 -0.064034
+-rotation 0.950826 0 0.191909
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.7 0.4 -0.0260733
+-jointType Hinge
+-jointNormal -0.0399665 0 -1.1748
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition -0.7 0.4 0.30042
+-jointType Hinge
+-jointNormal 0.457514 0 1.14827
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-3
+-connect 2 3
+-jointPosition -1.56843 0.4 0.633731
+-jointType Hinge
+-jointNormal -0.0589196 0 0.832876
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -2.06585 0.4 0.370878
+-jointType Hinge
+-jointNormal -0.478048 0 -0.0663853
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-5
+-connect 0 5
+-jointPosition 0.25586 0.4 0.7
+-jointType Hinge
+-jointNormal 1.16515 0 -0.393186
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 3-6
+-connect 3 6
+-jointPosition -1.73213 0.4 0.519927
+-jointType Hinge
+-jointNormal 0.606303 0 -0.243676
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 0-7
+-connect 0 7
+-jointPosition 0.7 0.4 0.335259
+-jointType Hinge
+-jointNormal 0.513425 0 -1.15109
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 1-8
+-connect 1 8
+-jointPosition 1.64989 0.4 -0.064034
+-jointType Hinge
+-jointNormal 0.071887 0 -0.950508
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 0.53509 0.4 1.13839
+-rotation 0.365736 0 0.876777
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 0.972813 0.4 1.05257
+-rotation 0.636605 0 0.705148
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -1.15115 0.4 -0.432276
+-rotation -0.902296 0 -0.297259
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -1.03588 0.4 -1.03588
+-rotation -0.671753 0 -0.67175
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -1.10352 0.4 -1.6998
+-rotation 0.257324 0 -0.935246
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -1.23218 0.4 -1.23218
+-rotation 0.257324 0 -0.935246
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -0.941453 0.4 1.06968
+-rotation -0.627897 0 0.739355
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -0.627505 0.4 0.7
+-rotation -0.627897 0 0.739355
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position -0.693262 0.4 0.239217
+-rotation -0.0782021 0 -0.966843
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position -0.654161 0.4 0.722638
+-rotation -0.0782021 0 -0.966843
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -1.217 0.4 0.19039
+-rotation -0.969995 0 0.00323582
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -0.732 0.4 0.188772
+-rotation -0.969995 0 0.00323582
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.352222 0.4 0.7
+-jointType Hinge
+-jointNormal 1.13839 0 -0.53509
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition 0.65451 0.4 0.7
+-jointType Hinge
+-jointNormal 1.05257 0 -0.972813
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-3
+-connect 0 3
+-jointPosition -0.7 0.4 -0.283646
+-jointType Hinge
+-jointNormal -0.432276 0 1.15115
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-4
+-connect 0 4
+-jointPosition -0.7 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.03588 0 1.03588
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 4-5
+-connect 4 5
+-jointPosition -1.23218 0.4 -1.23218
+-jointType Hinge
+-jointNormal -0.663925 0 0.0676413
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 0-6
+-connect 0 6
+-jointPosition -0.627505 0.4 0.7
+-jointType Hinge
+-jointNormal 1.06968 0 0.941453
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 6-7
+-connect 6 7
+-jointPosition -0.654161 0.4 0.722638
+-jointType Hinge
+-jointNormal -0.830461 0 -0.248191
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 7-8
+-connect 7 8
+-jointPosition -0.732 0.4 0.188772
+-jointType Hinge
+-jointNormal -0.0488266 0 0.523735
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position -0.700206 0.4 -1.11208
+-rotation -0.472495 0 -0.824165
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -1.38535 0.4 -1.48503
+-rotation -0.94677 0 -0.0782724
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -2.31418 0.4 -1.40156
+-rotation -0.908104 0 0.27901
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -3.22648 0.4 -1.38733
+-rotation -0.900159 0 -0.303667
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -1.04295 0.4 -1.04295
+-rotation -0.685895 0 -0.685892
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -0.7 0.4 -0.7
+-rotation -0.685895 0 -0.685892
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -3.35734 0.4 -0.949315
+-rotation -0.278498 0 0.92916
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -3.21809 0.4 -1.4139
+-rotation -0.278498 0 0.92916
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position -0.559874 0.4 -0.23486
+-rotation -0.140354 0 0.959792
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position -0.489697 0.4 -0.714756
+-rotation -0.140354 0 0.959792
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -0.164687 0.4 -1.09781
+-rotation 0.603595 0 -0.759324
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -0.466485 0.4 -0.71815
+-rotation 0.603595 0 -0.759324
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition -0.463958 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.11208 0 0.700206
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-2
+-connect 1 2
+-jointPosition -0.911965 0.4 -1.44589
+-jointType Hinge
+-jointNormal -0.372948 0 0.685144
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-3
+-connect 2 3
+-jointPosition -1.86013 0.4 -1.54107
+-jointType Hinge
+-jointNormal 0.0834668 0 0.928834
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -2.7764 0.4 -1.2355
+-jointType Hinge
+-jointNormal 0.0142296 0 0.912291
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-5
+-connect 0 5
+-jointPosition -0.7 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.04295 0 1.04295
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 4-6
+-connect 4 6
+-jointPosition -3.21809 0.4 -1.4139
+-jointType Hinge
+-jointNormal 0.438018 0 0.130866
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 1-7
+-connect 1 7
+-jointPosition -0.489697 0.4 -0.714756
+-jointType Hinge
+-jointNormal 0.877223 0 -0.140332
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 7-8
+-connect 7 8
+-jointPosition -0.466485 0.4 -0.71815
+-jointType Hinge
+-jointNormal -0.862953 0 -0.395187
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 0.390031 0.4 -1.15559
+-rotation 0.268772 0 -0.911187
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 1.08833 0.4 0.820467
+-rotation 0.77667 0 0.547069
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position 1.77215 0.4 1.45062
+-rotation 0.604677 0 0.732711
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position 0.971582 0.4 1.00827
+-rotation -0.943781 0 -0.108522
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position 1.36932 0.4 0.626046
+-rotation -0.231817 0 -0.941892
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position 1.48523 0.4 1.09699
+-rotation -0.231817 0 -0.941892
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position 0.891465 0.4 -0.197503
+-rotation -0.677827 0 -0.693867
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 1.23038 0.4 0.14943
+-rotation -0.677827 0 -0.693867
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 1.46257 0.4 -0.281612
+-rotation 0.852885 0 -0.462047
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 1.03613 0.4 -0.0505886
+-rotation 0.852885 0 -0.462047
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 0.676444 0.4 -2.07252
+-rotation 0.30155 0 -0.921937
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 0.525669 0.4 -1.61156
+-rotation 0.30155 0 -0.921937
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.255645 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.15559 0 -0.390031
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition 0.7 0.4 0.546933
+-jointType Hinge
+-jointNormal 0.820467 0 -1.08833
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-3
+-connect 2 3
+-jointPosition 1.46981 0.4 1.08427
+-jointType Hinge
+-jointNormal 0.630156 0 -0.683817
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition 1.44347 0.4 1.06253
+-jointType Hinge
+-jointNormal -0.442354 0 0.800569
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-5
+-connect 3 5
+-jointPosition 1.48523 0.4 1.09699
+-jointType Hinge
+-jointNormal -0.824576 0 0.402827
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 5-6
+-connect 5 6
+-jointPosition 1.23038 0.4 0.14943
+-jointType Hinge
+-jointNormal -0.823549 0 0.477859
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 6-7
+-connect 6 7
+-jointPosition 1.03613 0.4 -0.0505886
+-jointType Hinge
+-jointNormal -0.0841088 0 -0.571105
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 1-8
+-connect 1 8
+-jointPosition 0.525669 0.4 -1.61156
+-jointType Hinge
+-jointNormal -0.916931 0 -0.286413
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 1.04507 0.4 1.00166
+-rotation 0.690147 0 0.652837
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -1.09954 0.4 -0.76617
+-rotation -0.799082 0 -0.513778
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -1.03588 0.4 -1.03588
+-rotation -0.671753 0 -0.67175
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position 0.85368 0.4 1.08108
+-rotation 0.567096 0 0.762169
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position 0.0622587 0.4 0.6084
+-rotation -0.959632 0 -0.141447
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position 0.542074 0.4 0.679124
+-rotation -0.959632 0 -0.141447
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position 1.27266 0.4 1.73769
+-rotation -0.0851855 0 0.966252
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 1.31526 0.4 1.25457
+-rotation -0.0851855 0 0.966252
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position -0.767222 0.4 1.10883
+-rotation -0.521857 0 0.817658
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position -0.506293 0.4 0.7
+-rotation -0.521857 0 0.817658
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -1.13076 0.4 0.648391
+-rotation -0.861528 0 0.445724
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -0.7 0.4 0.425529
+-rotation -0.861528 0 0.445724
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.7 0.4 0.675245
+-jointType Hinge
+-jointNormal 1.00166 0 -1.04507
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition -0.7 0.4 -0.509281
+-jointType Hinge
+-jointNormal -0.76617 0 1.09954
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-3
+-connect 0 3
+-jointPosition -0.7 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.03588 0 1.03588
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-4
+-connect 0 4
+-jointPosition 0.570132 0.4 0.7
+-jointType Hinge
+-jointNormal 1.08108 0 -0.85368
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 4-5
+-connect 4 5
+-jointPosition 0.542074 0.4 0.679124
+-jointType Hinge
+-jointNormal -0.472685 0 0.791421
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 1-6
+-connect 1 6
+-jointPosition 1.31526 0.4 1.25457
+-jointType Hinge
+-jointNormal 0.736029 0 -0.227591
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 0-7
+-connect 0 7
+-jointPosition -0.506293 0.4 0.7
+-jointType Hinge
+-jointNormal 1.10883 0 0.767222
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 0-8
+-connect 0 8
+-jointPosition -0.7 0.4 0.425529
+-jointType Hinge
+-jointNormal 0.648391 0 1.13076
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 1.13339 0.4 -0.570239
+-rotation 0.866785 0 -0.388825
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 0.121647 0.4 -1.17312
+-rotation 0.084513 0 -0.946233
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -0.896411 0.4 -1.07131
+-rotation -0.592463 0 -0.742622
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -1.56153 0.4 -1.21008
+-rotation -0.928466 0 0.201125
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -1.8876 0.4 -0.71626
+-rotation -0.1863 0 0.951941
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -1.79445 0.4 -1.19223
+-rotation -0.1863 0 0.951941
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position 0.988483 0.4 -0.0315545
+-rotation 0.0686876 0 0.967565
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 0.954139 0.4 -0.515337
+-rotation 0.0686876 0 0.967565
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 1.21639 0.4 0.903631
+-rotation 0.359663 0 0.900856
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 1.03656 0.4 0.453203
+-rotation 0.359663 0 0.900856
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 0.624817 0.4 -1.00556
+-rotation 0.949301 0 0.199317
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 0.150166 0.4 -1.10522
+-rotation 0.949301 0 0.199317
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.7 0.4 -0.375826
+-jointType Hinge
+-jointNormal -0.570239 0 -1.13339
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition 0.0793908 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.17312 0 -0.121647
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-3
+-connect 0 3
+-jointPosition -0.60018 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.07131 0 0.896411
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -1.0973 0.4 -1.31065
+-jointType Hinge
+-jointNormal -0.138772 0 0.665119
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 4-5
+-connect 4 5
+-jointPosition -1.79445 0.4 -1.19223
+-jointType Hinge
+-jointNormal 0.493823 0 0.326066
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 1-6
+-connect 1 6
+-jointPosition 0.954139 0.4 -0.515337
+-jointType Hinge
+-jointNormal 0.538684 0 0.14491
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 6-7
+-connect 6 7
+-jointPosition 1.03656 0.4 0.453203
+-jointType Hinge
+-jointNormal 0.935186 0 -0.22791
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 2-8
+-connect 2 8
+-jointPosition 0.150166 0.4 -1.10522
+-jointType Hinge
+-jointNormal 0.167553 0 -0.50317
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 0.426392 0.4 -1.15179
+-rotation 0.293305 0 -0.903589
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 0.198793 0.4 1.16997
+-rotation 0.137906 0 0.939937
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -1.09353 0.4 -0.795798
+-rotation -0.787052 0 -0.532024
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -1.91011 0.4 -1.28714
+-rotation -0.840629 0 -0.442542
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -1.04295 0.4 -1.04295
+-rotation -0.685895 0 -0.685892
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -0.7 0.4 -0.7
+-rotation -0.685895 0 -0.685892
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position 0.532939 0.4 -1.14845
+-rotation 0.369423 0 -0.896899
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 0.348228 0.4 -0.7
+-rotation 0.369423 0 -0.896899
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position -1.07336 0.4 -1.32747
+-rotation 0.291226 0 -0.92525
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position -1.21897 0.4 -0.864847
+-rotation 0.291226 0 -0.92525
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -1.40419 0.4 -1.84709
+-rotation -0.0808365 0 -0.966626
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -1.36378 0.4 -1.36377
+-rotation -0.0808365 0 -0.966626
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.27974 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.15179 0 -0.426392
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition 0.129839 0.4 0.7
+-jointType Hinge
+-jointNormal 1.16997 0 -0.198793
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-3
+-connect 0 3
+-jointPosition -0.7 0.4 -0.529786
+-jointType Hinge
+-jointNormal -0.795798 0 1.09353
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -1.48979 0.4 -1.06586
+-jointType Hinge
+-jointNormal -0.491338 0 0.816581
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-5
+-connect 0 5
+-jointPosition -0.7 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.04295 0 1.04295
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 0-6
+-connect 0 6
+-jointPosition 0.348228 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.14845 0 -0.532939
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 3-7
+-connect 3 7
+-jointPosition -1.21897 0.4 -0.864847
+-jointType Hinge
+-jointNormal -0.531674 0 -0.0201695
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 5-8
+-connect 5 8
+-jointPosition -1.36378 0.4 -1.36377
+-jointType Hinge
+-jointNormal -0.804139 0 0.361246
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position -1.14356 0.4 -0.496042
+-rotation -0.887118 0 -0.339884
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -0.377504 0.4 -1.15682
+-rotation -0.260287 0 -0.913647
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -0.810262 0.4 -0.859391
+-rotation -0.855384 0 0.413301
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -1.21335 0.4 -0.259545
+-rotation -0.160981 0 0.936261
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -1.04295 0.4 -1.04295
+-rotation -0.685895 0 -0.685892
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -0.7 0.4 -0.7
+-rotation -0.685895 0 -0.685892
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position 1.06445 0.4 0.962197
+-rotation 0.728904 0 0.64
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 0.7 0.4 0.642197
+-rotation 0.728904 0 0.64
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 1.84933 0.4 1.53878
+-rotation 0.830428 0 0.501288
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 1.43412 0.4 1.28814
+-rotation 0.830428 0 0.501288
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 1.63094 0.4 1.95362
+-rotation -0.456623 0 0.855801
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 1.85925 0.4 1.52572
+-rotation -0.456623 0 0.855801
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition -0.7 0.4 -0.3261
+-jointType Hinge
+-jointNormal -0.496042 0 1.14356
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition -0.247361 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.15682 0 0.377504
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-3
+-connect 2 3
+-jointPosition -0.38257 0.4 -1.06604
+-jointType Hinge
+-jointNormal 0.297432 0 0.432758
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -1.13286 0.4 -0.727676
+-jointType Hinge
+-jointNormal 0.599846 0 0.403091
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-5
+-connect 0 5
+-jointPosition -0.7 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.04295 0 1.04295
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 0-6
+-connect 0 6
+-jointPosition 0.7 0.4 0.642197
+-jointType Hinge
+-jointNormal 0.962197 0 -1.06445
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 6-7
+-connect 6 7
+-jointPosition 1.43412 0.4 1.28814
+-jointType Hinge
+-jointNormal 0.576586 0 -0.784883
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 7-8
+-connect 7 8
+-jointPosition 1.85925 0.4 1.52572
+-jointType Hinge
+-jointNormal 0.414839 0 0.218399
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position -0.262146 0.4 1.16625
+-rotation -0.181544 0 0.932492
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -0.94016 0.4 -1.06078
+-rotation -0.617938 0 -0.721563
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -0.239239 0.4 2.09424
+-rotation 0.19267 0 0.930257
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -0.255141 0.4 -0.396565
+-rotation 0.739631 0 0.596192
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -1.10552 0.4 -0.833405
+-rotation -0.937661 0 -0.248379
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -0.636689 0.4 -0.709215
+-rotation -0.937661 0 -0.248379
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -1.48185 0.4 -1.34829
+-rotation -0.205975 0 -0.947879
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -1.37886 0.4 -0.874352
+-rotation -0.205975 0 -0.947879
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 1.12651 0.4 0.673133
+-rotation 0.853022 0 0.461794
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.7 0.4 0.442236
+-rotation 0.853022 0 0.461794
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -1.18499 0.4 0.00635373
+-rotation -0.96999 0 0.00447896
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -0.7 0.4 0.00411425
+-rotation -0.96999 0 0.00447896
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition -0.171374 0.4 0.7
+-jointType Hinge
+-jointNormal 1.16625 0 0.262146
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 0-2
+-connect 0 2
+-jointPosition -0.631191 0.4 -0.7
+-jointType Hinge
+-jointNormal -1.06078 0 0.94016
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition -0.335574 0.4 1.62912
+-jointType Hinge
+-jointNormal 0.927998 0 -0.0229071
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 2-4
+-connect 2 4
+-jointPosition -0.624957 0.4 -0.694661
+-jointType Hinge
+-jointNormal 0.664216 0 -0.685019
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 4-5
+-connect 4 5
+-jointPosition -0.636689 0.4 -0.709215
+-jointType Hinge
+-jointNormal -0.43684 0 0.850378
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 5-6
+-connect 5 6
+-jointPosition -1.37886 0.4 -0.874352
+-jointType Hinge
+-jointNormal -0.514886 0 0.376326
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 0-7
+-connect 0 7
+-jointPosition 0.7 0.4 0.442236
+-jointType Hinge
+-jointNormal 0.673133 0 -1.12651
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 0-8
+-connect 0 8
+-jointPosition -0.7 0.4 0.00411425
+-jointType Hinge
+-jointNormal 0.00635373 0 1.18499
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position -1.17419 0.4 0.0798082
+-rotation -0.948379 0 0.0554728
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position -0.342509 0.4 0.332293
+-rotation 0.710904 0 0.630172
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -2.02045 0.4 0.373818
+-rotation -0.747294 0 0.586559
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position -1.32279 0.4 0.344849
+-rotation 0.873962 0 0.372413
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position -2.11068 0.4 -0.0255491
+-rotation -0.922672 0 -0.299294
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position -1.64935 0.4 0.124098
+-rotation -0.922672 0 -0.299294
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -1.1755 0.4 0.272259
+-rotation -0.950994 0 0.191076
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position -0.7 0.4 0.176721
+-rotation -0.950994 0 0.191076
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position -2.18142 0.4 0.345689
+-rotation -0.878188 0 0.411929
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position -1.74233 0.4 0.139724
+-rotation -0.878188 0 0.411929
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position -0.438153 0.4 0.36743
+-rotation 0.89186 0 -0.381426
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position -0.884083 0.4 0.558143
+-rotation 0.89186 0 -0.381426
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition -0.7 0.4 0.0520718
+-jointType Hinge
+-jointNormal 0.0798082 0 1.17419
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-2
+-connect 1 2
+-jointPosition -0.697961 0.4 0.0172073
+-jointType Hinge
+-jointNormal 0.252485 0 -0.831681
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition -1.6468 0.4 0.0805387
+-jointType Hinge
+-jointNormal 0.29401 0 0.846257
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 3-4
+-connect 3 4
+-jointPosition -1.75977 0.4 0.158643
+-jointType Hinge
+-jointNormal -0.0289694 0 -0.697655
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-5
+-connect 1 5
+-jointPosition -1.64935 0.4 0.124098
+-jointType Hinge
+-jointNormal -0.105357 0 0.936494
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 0-6
+-connect 0 6
+-jointPosition -0.7 0.4 0.176721
+-jointType Hinge
+-jointNormal 0.272259 0 1.1755
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 4-7
+-connect 4 7
+-jointPosition -1.74233 0.4 0.139724
+-jointType Hinge
+-jointNormal 0.000840369 0 0.858629
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 4-8
+-connect 4 8
+-jointPosition -0.884083 0.4 0.558143
+-jointType Hinge
+-jointNormal 0.0225817 0 -0.884639
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+
+13 12
+
+( 0
+-position 0 0.45 0
+-rotation 0 -1.5708 0
+-shape -rectangle 0.82 0.82 0.9
+-mass 0.5
+-colour 0.0 1.0 0.0
+-floorContact
+)
+
+( 1
+-position 0.526418 0.4 1.13957
+-rotation 0.360013 0 0.879142
+-shape -cylinder 0.07 0.95
+-mass 0.5
+-colour 1.0 0.0 0.0
+-floorContact
+)
+
+( 2
+-position 1.00356 0.4 1.96241
+-rotation 0.572928 0 0.757796
+-shape -cylinder 0.07 0.95
+-mass 1.143
+-colour 0.0 0.0 1.0
+-floorContact
+)
+
+( 3
+-position -0.11394 0.4 0.638626
+-rotation -0.917464 0 -0.246496
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 0.0 1.0
+-floorContact
+)
+
+( 4
+-position 0.999609 0.4 0.975839
+-rotation 0.880223 0 -0.357362
+-shape -cylinder 0.07 0.95
+-mass 0.143
+-colour 1.0 1.0 0.0
+-floorContact
+)
+
+( 5
+-position 0.295243 0.4 0.223371
+-rotation -0.123836 0 -0.962063
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 5_shank 
+-position 0.357161 0.4 0.704402
+-rotation -0.123836 0 -0.962063
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.0
+-floorContact
+)
+
+( 6
+-position -0.0131557 0.4 -0.686595
+-rotation -0.460546 0 -0.853696
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 6_shank 
+-position 0.217117 0.4 -0.259747
+-rotation -0.460546 0 -0.853696
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.0 0.0 0.5
+-floorContact
+)
+
+( 7
+-position 0.399382 0.4 1.15655
+-rotation 0.331179 0 0.911713
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 7_shank 
+-position 0.233792 0.4 0.70069
+-rotation 0.331179 0 0.911713
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.0 0.5
+-floorContact
+)
+
+( 8
+-position 1.33014 0.4 1.33321
+-rotation 0.482917 0 0.841244
+-shape -cylinder 0.07 0.97
+-mass 0.118
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 8_shank 
+-position 1.08868 0.4 0.912592
+-rotation 0.482917 0 0.841244
+-shape -rectangle 0.37 0.3 0.4
+-mass 0.023
+-colour 0.5 0.5 0.0
+-floorContact
+)
+
+( 0-1
+-connect 0 1
+-jointPosition 0.346412 0.4 0.7
+-jointType Hinge
+-jointNormal 1.13957 0 -0.526418
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-2
+-connect 1 2
+-jointPosition 0.717093 0.4 1.58351
+-jointType Hinge
+-jointNormal 0.822837 0 -0.477138
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-3
+-connect 1 3
+-jointPosition 0.344792 0.4 0.761874
+-jointType Hinge
+-jointNormal -0.500945 0 0.640359
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-4
+-connect 1 4
+-jointPosition 0.559498 0.4 1.15452
+-jointType Hinge
+-jointNormal -0.163732 0 -0.473191
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 1-5
+-connect 1 5
+-jointPosition 0.357161 0.4 0.704402
+-jointType Hinge
+-jointNormal -0.916201 0 0.231175
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 5-5_shank
+-connect 5 5_shank
+-jointType Fixed
+)
+
+( 5-6
+-connect 5 6
+-jointPosition 0.217117 0.4 -0.259747
+-jointType Hinge
+-jointNormal -0.909966 0 0.308399
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 6-6_shank
+-connect 6 6_shank
+-jointType Fixed
+)
+
+( 3-7
+-connect 3 7
+-jointPosition 0.233792 0.4 0.70069
+-jointType Hinge
+-jointNormal 0.517921 0 -0.513322
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 7-7_shank
+-connect 7 7_shank
+-jointType Fixed
+)
+
+( 4-8
+-connect 4 8
+-jointPosition 1.08868 0.4 0.912592
+-jointType Hinge
+-jointNormal 0.357375 0 -0.330532
+-jointLimits -90 90
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( 8-8_shank
+-connect 8 8_shank
+-jointType Fixed
+)
+
+(
+-evaluationPeriod 100
+-testForExplosions
+)
+

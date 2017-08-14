@@ -1,0 +1,262 @@
+
+1
+15 14
+
+( Box
+-position 0 0.0335 0 
+-rotation 0 -1.57079 0
+-mass 0.5
+-shape -rectangle 0.1 0.1 0.067
+-colour 0.1 0.1 0.1
+-floorContact
+)
+
+( UpperLeg0
+-position -0.0975 0.0335 0
+-rotation 0 -1.57079 0
+-mass 0.143
+-shape -rectangle 0.095 0.07 0.025
+-colour 0.3 0.3 0.3
+-floorContact
+)
+
+( UpperLeg1
+-position 0 0.0335 0.0975
+-rotation 0 1.57079 0
+-mass 0.143
+-shape -rectangle 0.07 0.095 0.025
+-colour 0.3 0.3 0.3
+-floorContact
+)
+
+( UpperLeg2
+-position 0.0975 0.0335 0
+-rotation 0 1.57079 0
+-mass 0.143
+-shape -rectangle 0.095 0.07 0.025
+-colour 0.3 0.3 0.3
+-floorContact
+)
+
+( UpperLeg3
+-position 0 0.0335 -0.0975
+-rotation 0 1.57079 0
+-mass 0.143
+-shape -rectangle 0.07 0.095 0.025
+-colour 0.3 0.3 0.3
+-floorContact
+)
+
+( LowerLeg0
+-position -0.1935 0.0335 0
+-rotation -1.57079 0 0
+-mass 0.118
+-shape -rectangle 0.026 0.026 0.097
+-colour 0.5 0.5 0.5 
+)
+
+( LowerLeg1
+-position 0 0.0335 0.1935
+-rotation 0 0 1.57079
+-mass 0.118
+-shape -rectangle 0.026 0.026 0.097
+-colour 0.5 0.5 0.5 
+)
+
+( LowerLeg2
+-position 0.1935 0.0335 0
+-rotation 1.57079 0 0
+-mass 0.118
+-shape -rectangle 0.026 0.026 0.097
+-colour 0.5 0.5 0.5
+)
+
+( LowerLeg3
+-position 0 0.0335 -0.1935
+-rotation 0 0 1.57079
+-mass 0.118
+-shape -rectangle 0.026 0.026 0.097
+-colour 0.5 0.5 0.5
+)
+
+( Foot0
+-position -0.242 0.0335 0
+-mass 0.01
+-shape -sphere 0.013
+-colour 1 0 0
+-floorContact  
+)
+
+( Foot1
+-position 0 0.0335 0.242
+-mass 0.01
+-shape -sphere 0.013
+-colour 1 0 0
+-floorContact  
+)
+
+( Foot2
+-position 0.242 0.0335 0
+-mass 0.01
+-shape -sphere 0.013
+-colour 1 0 0
+-floorContact  
+)
+
+( Foot3
+-position 0 0.0335 -0.242
+-mass 0.01
+-shape -sphere 0.013
+-colour 1 0 0
+-floorContact  
+)
+
+( Dangler1
+-position 0 -0.0165 0
+-rotation 0 90 0
+-mass 0.001
+-shape -cylinder 0.01 0.1
+-colour 0 0 1
+)
+
+( Dangler2
+-position 0 -0.0165 0
+-rotation 0 90 0
+-mass 0.001
+-shape -cylinder 0.01 0.1
+-colour 0 1 0
+)
+
+( UpperLeg0_Box
+-connect UpperLeg0 Box
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal 0 0 1
+-jointPosition -0.05 0.0335 0 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( UpperLeg1_Box
+-connect UpperLeg1 Box
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal 1 0 0
+-jointPosition 0 0.0335 0.05 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( UpperLeg2_Box
+-connect UpperLeg2 Box
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal 0 0 -1
+-jointPosition 0.05 0.0335 0 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( UpperLeg3_Box
+-connect UpperLeg3 Box
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal -1 0 0
+-jointPosition 0 0.0335 -0.05 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( LowerLeg0_UpperLeg0
+-connect LowerLeg0 UpperLeg0
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal 0 0 -1
+-jointPosition -0.145 0.0335 0 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( LowerLeg1_UpperLeg1
+-connect LowerLeg1 UpperLeg1
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal -1 0 0
+-jointPosition 0 0.0335 0.145 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( LowerLeg2_UpperLeg2
+-connect LowerLeg2 UpperLeg2
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal 0 0 1
+-jointPosition 0.145 0.0335 0 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( LowerLeg3_UpperLeg3
+-connect LowerLeg3 UpperLeg3
+-jointType Hinge
+-jointLimits -90 90
+-jointNormal 1 0 0
+-jointPosition 0 0.0335 -0.145 
+-addMotor
+-motorForce 40
+-motorSpeed 8
+-addSensor
+)
+
+( LowerLeg0_Foot0
+-connect LowerLeg0 Foot0
+-jointType Fixed
+)
+
+( LowerLeg1_Foot1
+-connect LowerLeg1 Foot1
+-jointType Fixed
+)
+
+( LowerLeg2_Foot2
+-connect LowerLeg2 Foot2
+-jointType Fixed
+)
+
+( LowerLeg3_Foot3
+-connect LowerLeg3 Foot3
+-jointType Fixed
+)
+
+( Box_Dangler1
+-connect Box Dangler1
+-jointType Hinge
+-jointPosition 0 0.0335 0
+-jointNormal 0 0 1
+)
+
+( Box_Dangler2
+-connect Box Dangler2
+-jointType Hinge
+-jointPosition 0 0.0335 0
+-jointNormal 1 0 0
+)
+
+(
+-evaluationPeriod 400
+)

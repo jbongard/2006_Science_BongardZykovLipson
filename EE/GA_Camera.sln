@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GA_Camera", "GA_Camera.vcproj", "{22D27462-3D99-448A-BE44-EEA3D357724F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MorphEngine", "..\Target\MorphEngine.vcproj", "{62F25F98-D594-4D2C-92FD-9B0C47B12B08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22D27462-3D99-448A-BE44-EEA3D357724F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22D27462-3D99-448A-BE44-EEA3D357724F}.Debug|Win32.Build.0 = Debug|Win32
+		{22D27462-3D99-448A-BE44-EEA3D357724F}.Release|Win32.ActiveCfg = Release|Win32
+		{22D27462-3D99-448A-BE44-EEA3D357724F}.Release|Win32.Build.0 = Release|Win32
+		{62F25F98-D594-4D2C-92FD-9B0C47B12B08}.Debug|Win32.ActiveCfg = Debug|Win32
+		{62F25F98-D594-4D2C-92FD-9B0C47B12B08}.Debug|Win32.Build.0 = Debug|Win32
+		{62F25F98-D594-4D2C-92FD-9B0C47B12B08}.Release|Win32.ActiveCfg = Release|Win32
+		{62F25F98-D594-4D2C-92FD-9B0C47B12B08}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
